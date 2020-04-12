@@ -1,0 +1,373 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	text-decoration: none;
+}
+
+:root {
+	--primary-color: #e4bb23;
+	--secondary-color: #c9a420;
+  }
+
+  
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	background-color: #f2f2f2;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	z-index: 2;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+
+.header {
+	background-attachment: fixed;
+    background-image: url('../img/capa-madmax2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+}
+
+.header:after {
+	background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+ 
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.links {
+    list-style: none;
+	display: flex;
+}
+
+.links li {
+	margin: 0px 25px;
+	cursor: pointer;
+}
+
+.links a {
+	color: white;
+}
+  
+.header-links li:nth-child(1){
+	margin-left: 0px;
+}
+.header-links li {
+	margin: 0px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.navbar-menu a:hover, .header-links a:hover {
+    color: var(--primary-color);
+}
+
+.navbar-user {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-user img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: flex;
+}
+.navbar-user p {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	margin-left: 15px;
+	text-transform: initial;
+}
+
+.header-title {
+	margin: 118px 0px 15px;
+}
+
+.header-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.header-title h1{
+	display: flex;
+	font-size: 65px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.header-button {
+	width: 194px;
+	margin-bottom: 32px;
+}
+
+.header-button a {
+	color: black;
+    background-color: var(--primary-color);
+	width: 194px;
+    height: 50px;
+    border-radius: 34px;
+    display: flex;
+    justify-content: flex-end;
+	align-items: center;
+	font-size: 14px;
+}
+
+.header-button a:hover {
+    background-color: var(--secondary-color);
+}
+
+.header-button i {
+	margin-right: 14px;
+    margin-left: 14px;
+    font-size: 24px;
+}
+
+.header-description p {
+	margin-bottom: 14px;
+	font-size: 14px;
+}
+
+.header-description p:nth-child(2) {
+	color: var(--secondary-color);
+}
+
+/* section  */
+
+.links-section {
+	color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.links-section li {
+	font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	height: 68px;
+	font-size: 13px;
+    line-height: 13px;
+	text-transform: uppercase;
+	margin: 0px 20px;
+}
+
+.links-section li:hover {
+	box-shadow: inset 0 -1px 0 var(--primary-color);
+}
+
+.links-section a {
+	color: var(--primary-color);
+	padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Main Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;  /* quebra linha para responsivo */
+	justify-content: space-between;
+	
+}
+
+.card {
+	width: 230px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	position: relative;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 8px
+}
+
+.card img {
+	width: 100%;
+	vertical-align: middle;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+
+.card-body {
+	text-align: center;
+	padding: 3px 10px 10px;
+	background-color: white;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.card-content {
+	text-align: left;
+	margin: 10px 0;
+}
+
+.card-content h2 {
+	font-size: 12px;
+	color: black;
+	font-weight: 700;
+	margin: 10px 0;
+}
+  
+.card-content a {
+	font-size: 12px;
+	color: var(--primary-color);
+  }
+  
+.card-content a:hover {
+	box-shadow: inset 0 -1px 0 var(--primary-color);
+
+}
+
+.card-play-move {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+	height: 77.5%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    padding: 80px 20px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+	z-index: 1;
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card:hover .card-play-move{
+	visibility: visible;
+	opacity: 1;
+}
+
+.card-play-move i {
+	color: #fff;
+	font-size: 50px;
+}
+
+.card-play-move i:hover {
+	color: var(--primary-color);
+}
+
+.card-play-move h3 {
+	color: var(--primary-color);
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+	color: black;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.card-footer i {
+	color: lightgray;
+}
+
+.card-footer i:hover {
+	color: red;
+}
+
+/* Footer */
+
+footer {
+	color: black;
+	width: 100%;
+	height: 100px;
+    background-color: white;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	
+}
+
+footer div, footer ul {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	list-style: none;
+    
+}
+
+footer li {
+	margin-left: 23px;
+	cursor: pointer;
+}
+
+footer div i {
+    
+	color: #bababa;
+	font-size: 2.5em;
+}
+
+footer div .fa-twitter:hover {
+	color: #55acee;
+}
+
+footer div .fa-facebook-official:hover {
+	color: #3b5998;
+}
+
+footer div .fa-instagram:hover {
+	color: #e95950;
+}
+
+footer div a {
+    font-size: 1.6em;
+    line-height: .75em;
+    vertical-align: -15%;
+    margin-left: 16px;
+}
