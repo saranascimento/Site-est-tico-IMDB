@@ -7,7 +7,7 @@ O desafio é desenvolver a página inicial de um site de avaliação de filmes (
 > 👉 [IMDB Codenation](https://aceleradev-react.netlify.com/aula-01/public/)
 
 > **Ver online:**
-> 👉 [IMDB Codenation](http://site-statico-imdb.surge.sh/)
+> 👉 [Projeto do código IMDB](http://site-statico-imdb.surge.sh/)
 
 ## Tópicos:
 Neste desafio, você vai praticar os seus conhecimentos em:
